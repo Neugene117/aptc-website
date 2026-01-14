@@ -8,12 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/contactus.css" />
   </head>
   <body>
@@ -100,7 +96,181 @@
         </nav>
       </div>
     </header>
+<!-- Hero Section - Matching About Us Page -->
+    <section class="hero-section">
+        <div class="section-label">CONTACT US</div>
+        <h1 class="hero-title">Get In Touch With APTC Ltd</h1>
+        <p class="hero-description">Connect with us for partnerships, inquiries, or collaboration opportunities in transforming Rwandan agriculture.</p>
+        <button class="discover-btn">Send Message</button>
+    </section>
 
+    <!-- Contact Content -->
+    <div class="contact-container">
+        <!-- Contact Information & Map -->
+        <div class="contact-info fade-in">
+            <h2>Contact Information</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Address</h3>
+                        <p>Kigali, Rwanda</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Phone Number</h3>
+                        <p>(+250) 789 303 811</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Email</h3>
+                        <p>info@aptc.rw</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3 style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 700; color: var(--primary-dark); margin-bottom: 15px;">
+                    <i class="fas fa-map-pin" style="color: var(--secondary); margin-right: 8px;"></i>
+                    Our Location
+                </h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.507793386863!2d30.05667487496704!3d-1.9500131980323059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5d695ed2843%3A0x1c4a95d5214e1b65!2sAgro%20Processessing%20Trust%20Corporation%20Ltd%20(APTC)!5e0!3m2!1sen!2srw!4v1768413501022!5m2!1sen!2srw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section fade-in">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Your Mobile Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your mobile number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Your Address</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Enter your Message</label>
+                    <textarea id="message" placeholder="Type your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (!name || !email || !phone || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For now, we'll show a success message
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                alert(`Thank you, ${name}! Your message has been sent successfully. We'll get back to you soon.`);
+                
+                // Reset form
+                document.querySelector('.contact-form').reset();
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+
+        // Discover button scrolls to form
+        document.querySelector('.discover-btn').addEventListener('click', function() {
+            document.querySelector('.contact-form-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Add animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.contact-info, .contact-form-section').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add focus effects to form inputs
+        document.querySelectorAll('input, textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+            });
+        });
+    </script>
     <!-- Footer -->
     <footer>
       <div class="container">
