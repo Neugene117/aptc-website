@@ -6,9 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fed6e3 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   overflow: hidden;
-  position: relative;
 }
 
 .hero-container {
