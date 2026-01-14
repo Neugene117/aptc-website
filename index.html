@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APTC Ltd - Agriculture Mechanization</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="logo.png" alt="APTC Ltd Logo" class="logo-image">
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mainNav" class="navbar">
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link active">Home</a>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link dropdown-toggle">About Us <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Who We Are</a>
+                <a href="#" class="dropdown-item">Team</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link dropdown-toggle">Projects <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">APTC Poultry Farming</a>
+                <a href="#" class="dropdown-item">GAKO Livestock Farm</a>
+                <a href="#" class="dropdown-item">Fertilizers and Seeds Distribution</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link dropdown-toggle">Subsidiaries <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Rugari Meat Processing Industries</a>
+                <a href="#" class="dropdown-item">Nyanza Milk Industries</a>
+                <a href="#" class="dropdown-item">Agro Processing Industries</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link dropdown-toggle">Media <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Gallery</a>
+                <a href="#" class="dropdown-item">Blog</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Career</a>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section with Split Layout -->
+    <section class="hero" id="heroCarousel">
+      <div class="hero-container">
+        <!-- Left Side: Text Content -->
+        <div class="hero-text-content">
+          <h1 class="hero-title" data-animate="true">Transforming Agriculture Through Modern Technology</h1>
+          <p class="hero-subtitle" data-animate="true" id="heroSubtitle">Premium dairy products for healthier living</p>
+          <button class="hero-cta-btn" id="heroCtaBtn">Get Started</button>
+          
+          <!-- Navigation Dots -->
+          <div class="hero-dots" id="heroDots" role="tablist">
+            <button class="hero-dot active" data-slide="0" role="tab" aria-label="Go to slide 1" aria-selected="true"></button>
+            <button class="hero-dot" data-slide="1" role="tab" aria-label="Go to slide 2" aria-selected="false"></button>
+            <button class="hero-dot" data-slide="2" role="tab" aria-label="Go to slide 3" aria-selected="false"></button>
+            <button class="hero-dot" data-slide="3" role="tab" aria-label="Go to slide 4" aria-selected="false"></button>
+            <button class="hero-dot" data-slide="4" role="tab" aria-label="Go to slide 5" aria-selected="false"></button>
+            <button class="hero-dot" data-slide="5" role="tab" aria-label="Go to slide 6" aria-selected="false"></button>
+          </div>
+        </div>
+
+        <!-- Right Side: Image Carousel -->
+        <div class="hero-image-content">
+          <div class="hero-carousel-wrapper">
+            <!-- Slide 1: Dairy Farm -->
+            <div class="hero-slide active" data-slide="0">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+
+            <!-- Slide 2: Farming Machinery -->
+            <div class="hero-slide" data-slide="1">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+
+            <!-- Slide 3: Service Delivery -->
+            <div class="hero-slide" data-slide="2">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad576?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+
+            <!-- Slide 4: Fertilizers & Seeds -->
+            <div class="hero-slide" data-slide="3">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+
+            <!-- Slide 5: Dairy Farm Landscape -->
+            <div class="hero-slide" data-slide="4">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+
+            <!-- Slide 6: Fresh Vegetables -->
+            <div class="hero-slide" data-slide="5">
+              <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1488459716781-6815589953af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+              <div class="hero-image-overlay"></div>
+            </div>
+          </div>
+
+          <!-- Image Navigation Arrows -->
+          <button class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agriculture Solutions Carousel Section -->
+    <section class="agriculture-carousel">
+      <div class="carousel-content">
+        <h3>Our Agriculture Solutions</h3>
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Crop Management">
+            <p>Crop Management</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Dairy Farming">
+            <p>Dairy Farming</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Mechanized Farming">
+            <p>Mechanized Farming</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Livestock Management">
+            <p>Livestock Management</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Seed Distribution">
+            <p>Seed Distribution</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Food Processing">
+            <p>Food Processing</p>
+          </div>
+          <!-- Duplicate items for seamless loop -->
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Crop Management">
+            <p>Crop Management</p>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Dairy Farming">
+            <p>Dairy Farming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              APTC Ltd is an investment Holding Trust Company whose offices are
+              located in heart of Kigali City. It was legally registered under
+              registration code No 1034544201 in accordance with the Rwanda
+              company law on the 24 day of October 2014.
+            </p>
+            <p>
+              APTC has invested in a wide range of business activities in three
+              subsidiary companies and two stand alone projects as follows; Agro
+              Processing Industries (API) Ltd, Rugari Meat Processing Ltd,
+              Nyanza Milk Industries Ltd, Fertilizer and Seed Distribution...
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1586773860418-dc22f8b874bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              alt="APTC Office"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subsidiaries Section -->
+    <section class="section subsidiaries">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Subsidiaries</h2>
+        </div>
+
+        <div class="subsidiaries-grid">
+          <div class="subsidiary-card">
+            <div class="subsidiary-img">
+              <img
+                src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Agro Processing"
+              />
+            </div>
+            <div class="subsidiary-content">
+              <h3>Agro Processing Industries</h3>
+              <p>
+                Agro processing Industries is engaged in crop production with
+                particular focus on maize, beans and soya beans.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="subsidiary-card">
+            <div class="subsidiary-img">
+              <img
+                src="https://images.unsplash.com/photo-1559022195-7f3d47e28f0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Meat Processing"
+              />
+            </div>
+            <div class="subsidiary-content">
+              <h3>Rugari Meat Processing Industries</h3>
+              <p>
+                Rugari Meat Processing Ltd is also a subsidiary company under
+                APTC with independent management team that runs its day-to-day
+                business activities. It is fully engaged in animal rearing and
+                meat processing activities.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+
+          <div class="subsidiary-card">
+            <div class="subsidiary-img">
+              <img
+                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Milk Processing"
+              />
+            </div>
+            <div class="subsidiary-content">
+              <h3>Nyanza Milk Industries</h3>
+              <p>
+                Nyanza Milk industries it process milk into a variety of
+                products such Pasteurized milk (Inshyuzyhu),curd milk (Kiwuqito)
+                yoghurt in strawberry, vanilla and mixed fruits flavors and
+                cheese in varying flavors, types and shapes.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Clients</h2>
+        </div>
+
+        <div class="clients-grid">
+          <div class="client-logo">
+            <span>SERENA HOTELS</span>
+          </div>
+          <div class="client-logo">
+            <span>Radisson Blu</span>
+          </div>
+          <div class="client-logo">
+            <span>RwandAir</span>
+          </div>
+          <div class="client-logo">
+            <span>KIGALI GENERAL TRADING</span>
+          </div>
+          <div class="client-logo">
+            <span>SENIOR OFFICER'S MESS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Latest News</h2>
+        </div>
+
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-date">June 15, 2023</div>
+            <div class="news-content">
+              <h3>
+                Government of Rwanda to provide farmers easier access to seeds
+                and fertilizers
+              </h3>
+              <p>
+                The meeting focused on increasing the productivity of
+                unaffiliated farmers...
+              </p>
+              <a href="#" class="btn">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-date">June 10, 2023</div>
+            <div class="news-content">
+              <h3>New model to get fertiliser to Rwanda farmers</h3>
+              <p>
+                The Cabinet has approved a new fertiliser distribution model to
+                replace the...
+              </p>
+              <a href="#" class="btn">READ MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">page suivante <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Who we are</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Rugari Meat Processing Industries</a></li>
+              <li><a href="#">Nyanza Milk Industries</a></li>
+              <li><a href="#">Agm Processing Industries</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Subsidiaries</h3>
+            <ul class="footer-links">
+              <li><a href="#">Agro Processing Industries</a></li>
+              <li><a href="#">Rugari Meat Processing Ltd</a></li>
+              <li><a href="#">Nyanza Milk Industries</a></li>
+              <li><a href="#">Fertilizer and Seed Distribution</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Information</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> KN 78 ST, Kgalo-Dwanda,
+                P.O.Box:0129
+              </li>
+              <li><i class="fas fa-phone"></i> (+250) 789 303 811</li>
+              <li><i class="fas fa-envelope"></i> info@atpc.rw</li>
+              <li><i class="fas fa-envelope"></i> ceoapctr@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Stay Connected</h3>
+            <p>Follow us on social media for the latest updates and news.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2023 APTC Ltd. All rights reserved. | Registered Code No
+            1034544201
+          </p>
+        </div>
+      </div>
+    </footer>
+<script src="./main.js"></script>
+  </body>
+</html>
