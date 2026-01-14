@@ -1,6 +1,6 @@
 // ===== HERO CAROUSEL DATA =====
 const HERO_SLIDES = [
-  { title: "Transforming Agriculture Through Modern Technology", subtitle: "Premium dairy products for healthier living" },
+  { title: "Milk is a nutritious drink, take care your body.", subtitle: "Premium dairy products for healthier living" },
   { title: "API Agriculture Mechanization", subtitle: "Modern technology for sustainable farming" },
   { title: "We Deliver Good Service With Good Quality", subtitle: "Excellence in every aspect of our work" },
   { title: "Fertilizers and Seeds Distribution", subtitle: "Quality seeds for better harvests" },
