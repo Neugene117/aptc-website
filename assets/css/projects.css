@@ -1,1 +1,255 @@
 @import url(./header.css);
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  line-height: 1.6;
+  transition: var(--transition);
+  min-height: 100vh;
+}
+
+/* Container and Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* Content Wrapper */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    max-width: none;
+    margin: 0;
+    padding: 2rem 0;
+  }
+}
+
+/* Article Section */
+.article {
+  margin-bottom: 2rem;
+}
+
+.article-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.featured-image {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.featured-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Project Details List */
+.project-details {
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.detail-icon {
+  color: var(--primary);
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background-color: rgba(77, 124, 15, 0.05);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.highlight-icon {
+  color: var(--primary);
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+/* Image with Caption */
+.image-with-caption {
+  margin-bottom: 2rem;
+}
+
+.image-with-caption img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #64748b;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  z-index: 10;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sidebar-title::before {
+  content: "";
+  width: 6px;
+  height: 24px;
+  background-color: var(--primary);
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.projects-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background-color: white;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text-light);
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: var(--transition);
+  border: 1px solid var(--border-light);
+}
+
+.project-link.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.project-link:not(.active):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.project-link:active {
+  transform: scale(0.98);
+}
+
+.project-name {
+  font-weight: 500;
+}
+
+.project-icon {
+  transition: var(--transition);
+}
+
+.active .project-icon {
+  transform: translateX(3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 1.5rem;
+  }
+
+  .featured-image img {
+    height: 250px;
+  }
+
+  .image-with-caption img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 1.35rem;
+  }
+
+  .featured-image img {
+    height: 200px;
+  }
+
+  .image-with-caption img {
+    height: 200px;
+  }
+
+  .project-link {
+    padding: 1rem 1.25rem;
+  }
+}
