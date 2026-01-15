@@ -667,37 +667,137 @@
 
 /* Clients Section */
 .clients-section {
-  padding: 60px 0;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+  position: relative;
 }
 
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+.clients-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 20%, var(--primary) 80%, transparent 100%);
+}
+
+.clients-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary) 20%, var(--primary) 80%, transparent 100%);
+}
+
+.clients-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.clients-carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scrollClientsRightToLeft 40s linear infinite;
+  width: fit-content;
+  padding: 0 2rem;
+}
+
+.clients-carousel-track:hover {
+  animation-play-state: paused;
 }
 
 .client-logo {
   background-color: white;
-  padding: 30px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
-  transition: var(--transition);
+  height: 140px;
+  min-width: 200px;
+  flex: 0 0 200px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #f0f0f0;
+  opacity: 0;
+  animation: fadeInClientsScale 0.6s ease-out forwards;
+}
+
+.client-logo:nth-child(1) {
+  animation-delay: 0s;
+}
+.client-logo:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.client-logo:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.client-logo:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.client-logo:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.client-logo:nth-child(6) {
+  animation-delay: 0.5s;
 }
 
 .client-logo:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(10, 93, 54, 0.15);
+  border-color: var(--primary);
+  background: linear-gradient(135deg, #ffffff 0%, var(--primary-light) 100%);
+}
+
+.client-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.client-logo:hover img {
+  transform: scale(1.1);
 }
 
 .client-logo span {
   font-weight: 700;
   color: var(--primary);
-  font-size: 1.2rem;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0.5rem;
+}
+
+@keyframes scrollClientsRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeInClientsScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* News Section */
@@ -929,6 +1029,24 @@
   .section {
     padding: 60px 0;
   }
+
+  /* Clients Section Mobile */
+  .clients-carousel-track {
+    gap: 1.5rem;
+    padding: 0 1rem;
+    animation: scrollClientsRightToLeft 35s linear infinite;
+  }
+
+  .client-logo {
+    height: 120px;
+    min-width: 160px;
+    flex: 0 0 160px;
+    padding: 1rem;
+  }
+
+  .client-logo span {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -974,8 +1092,26 @@
     font-size: 1.8rem;
   }
 
-  .clients-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .clients-carousel-wrapper {
+    padding: 1.5rem 0;
+  }
+
+  .clients-carousel-track {
+    gap: 1rem;
+    padding: 0 0.75rem;
+    animation: scrollClientsRightToLeft 30s linear infinite;
+  }
+
+  .client-logo {
+    height: 100px;
+    min-width: 140px;
+    flex: 0 0 140px;
+    padding: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .client-logo span {
+    font-size: 0.65rem;
   }
 }
 
