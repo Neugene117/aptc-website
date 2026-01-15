@@ -20,21 +20,12 @@
   justify-content: flex-end;
 }
 
-.announcements-container {
+.container {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   gap: 30px;
   padding: 40px 20px;
-}
-
-footer .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: block;
-  gap: unset;
 }
 
 .main-content {
@@ -266,7 +257,6 @@ footer .container {
   border-radius: var(--border-radius);
   padding: 24px;
   box-shadow: var(--shadow);
-  z-index: 999;
 }
 
 .sidebar-title {
