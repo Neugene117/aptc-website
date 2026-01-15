@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APTC Ltd - About Us</title>
+    <title>APTC Ltd - Announcements</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -94,7 +94,385 @@
         </nav>
       </div>
     </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="section-label">ANNOUNCEMENTS</div>
+      <h1 class="hero-title">Stay Updated with Latest News</h1>
+      <p class="hero-description">
+        Get the most recent announcements, updates, and important information
+        from APTC Ltd.
+      </p>
+      <button class="discover-btn">Explore Announcements</button>
+    </section>
+    <div class="container">
+      <div class="main-content">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="tab active" onclick="filterAnnouncements('all')">
+            All
+          </button>
+          <button class="tab" onclick="filterAnnouncements('hr')">HR</button>
+          <button class="tab" onclick="filterAnnouncements('tech')">
+            Tech
+          </button>
+          <button class="tab" onclick="filterAnnouncements('events')">
+            Events
+          </button>
+          <button class="tab" onclick="filterAnnouncements('internal')">
+            Internal
+          </button>
+        </div>
 
+        <!-- Announcements List -->
+        <div class="announcements-list">
+          <!-- Auction Announcement Kinyarwanda -->
+          <div
+            class="announcement-card"
+            data-category="events"
+            id="announcement-1"
+          >
+            <div class="card-header" onclick="toggleDetails(this)">
+              <img
+                src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800"
+                alt="Auction"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-event">Event</span>
+              <h2 class="card-title">
+                ITANGAZO RYA CYAMUNARA (5 - 15 UKUBOZA 2023)
+              </h2>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  2 days ago
+                </span>
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Nyarugunga
+                </span>
+              </div>
+              <p class="card-excerpt">
+                Ubuyobozi bwa Agro-Processing Trust Corporation (APTC)
+                buramenyesha abantu bose ko izagurisha mu cyamunara imodoka
+                z’ubwoko butandukanye, ibyuma by’imodoka (Spare Parts) ndetse
+                n’imashini z’ubwoko bwose...
+              </p>
+              <span class="read-more" onclick="toggleDetails(this)">
+                Read More <span class="arrow">›</span>
+              </span>
+            </div>
+            <div class="card-details">
+              <div class="details-content">
+                <ol style="margin: 12px 0 12px 20px; line-height: 1.8">
+                  <li>
+                    Ubuyobozi bwa Agro-Processing Trust Corporation (APTC)
+                    buramenyesha abantu bose ko izagurisha mu cyamunara imodoka
+                    z’ubwoko butandukanye, ibyuma by’imodoka (Spare Parts)
+                    ndetse n’imashini z’ubwoko bwose.
+                  </li>
+                  <li>
+                    Abifuza bose bashobora kubisura Nyarugunga ahakorera Rugali
+                    Meat Processing Ltd guhera italiki 05/12/2023 kugeza
+                    14/12/2023 kuva saa tatu (9h00) kugeza saa kumi n’imwe
+                    (17h00).
+                  </li>
+                  <li>
+                    Icyamunara kizabera Nyarugunga ahakorera Rugali Meat
+                    Processing Ltd ku italiki 15/12/2023 guhera saa tatu (9h00).
+                  </li>
+                  <li>
+                    Ukeneye ibindi bisobanuro yabariza ; Tel +250 788304692,
+                    +250 788647932.
+                  </li>
+                </ol>
+                <div class="card-actions" style="margin-top: 20px">
+                  <button class="btn btn-primary">Acknowledge</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Auction Announcement English -->
+          <div
+            class="announcement-card"
+            data-category="events"
+            id="announcement-2"
+          >
+            <div class="card-header" onclick="toggleDetails(this)">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
+                alt="Auction"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-event">Event</span>
+              <h2 class="card-title">
+                ANNOUNCEMENT OF THE AUCTION 5TH-15TH DECEMBER 2023
+              </h2>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  2 days ago
+                </span>
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Nyarugunga
+                </span>
+              </div>
+              <p class="card-excerpt">
+                The management of Agro-Processing Trust Corporation (APTC)
+                hereby informs the public that it will auction all types of
+                vehicles, spare parts and machinery of all types...
+              </p>
+              <span class="read-more" onclick="toggleDetails(this)">
+                Read More <span class="arrow">›</span>
+              </span>
+            </div>
+            <div class="card-details">
+              <div class="details-content">
+                <ol style="margin: 12px 0 12px 20px; line-height: 1.8">
+                  <li>
+                    The management of Agro-Processing Trust Corporation (APTC)
+                    hereby informs the public that it will auction all types of
+                    vehicles, spare parts and machinery of all types.
+                  </li>
+                  <li>
+                    Anyone interested is welcome to visit Rugali Meat Processing
+                    Ltd at it's premises located in Nyarugunga from 05/12/ to
+                    14/12/2023, between 9:00hrs and 17:00 hrs.
+                  </li>
+                  <li>
+                    The auction will be held in Nyargunga, where Rugali Meat
+                    Processing Ltd operates, on 15/12/2023 starting at 9:00hrs.
+                  </li>
+                  <li>
+                    For more information please contact ; Tel +250 788304692,
+                    +250 788647932.
+                  </li>
+                </ol>
+                <div class="card-actions" style="margin-top: 20px">
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Announcement -->
+          <div
+            class="announcement-card"
+            data-category="tech"
+            id="announcement-3"
+          >
+            <div class="card-header" onclick="toggleDetails(this)">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
+                alt="Tech"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-tech">Tech</span>
+              <h2 class="card-title">Q3 Tech Stack Update</h2>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  Updated yesterday
+                </span>
+              </div>
+              <p class="card-excerpt">
+                We are migrating our core infrastructure to enhance performance
+                and security. This update includes new tools, improved
+                workflows, and training sessions for all technical teams...
+              </p>
+              <span class="read-more" onclick="toggleDetails(this)">
+                Read More <span class="arrow">›</span>
+              </span>
+              <p class="updated-label">Updated yesterday</p>
+            </div>
+            <div class="card-details">
+              <div class="details-content">
+                <p>
+                  Our Q3 tech stack update brings significant improvements to
+                  our development and deployment processes. The migration will
+                  happen in phases over the next two months.
+                </p>
+                <p style="margin-top: 12px">
+                  Training sessions will be held every Tuesday and Thursday.
+                  Please ensure you attend at least one session to learn about
+                  the new tools and workflows.
+                </p>
+                <div class="card-actions" style="margin-top: 20px">
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internal Announcement -->
+          <div
+            class="announcement-card"
+            data-category="internal"
+            id="announcement-4"
+          >
+            <div class="card-header" onclick="toggleDetails(this)">
+              <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
+                alt="Meeting"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-internal">Internal</span>
+              <h2 class="card-title">Quarterly Town Hall</h2>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  2 days ago
+                </span>
+              </div>
+              <p class="card-excerpt">
+                Don't forget to submit your questions for the CEO Q&A by Friday.
+                We will be discussing company performance, upcoming initiatives,
+                and answering your questions...
+              </p>
+              <span class="read-more" onclick="toggleDetails(this)">
+                Read More <span class="arrow">›</span>
+              </span>
+            </div>
+            <div class="card-details">
+              <div class="details-content">
+                <p>
+                  Our quarterly town hall is an opportunity to hear directly
+                  from leadership about company progress and future plans. This
+                  session will include:
+                </p>
+                <ul style="margin: 12px 0 12px 20px; line-height: 1.8">
+                  <li>Q3 performance review and highlights</li>
+                  <li>Q4 strategic initiatives</li>
+                  <li>Open Q&A with the CEO</li>
+                  <li>Team recognition and awards</li>
+                </ul>
+                <p>
+                  Submit your questions through the internal portal by end of
+                  day Friday.
+                </p>
+                <div class="card-actions" style="margin-top: 20px">
+                  <button class="btn btn-primary">Submit Question</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-sticky">
+          <h3 class="sidebar-title">Quick Navigation</h3>
+          <div class="timeline">
+            <div
+              class="timeline-item"
+              onclick="scrollToAnnouncement('announcement-1')"
+            >
+              <div class="timeline-title">
+                ITANGAZO RYA CYAMUNARA (5 - 15 UKUBOZA 2023)
+              </div>
+              <div class="timeline-category">Event</div>
+            </div>
+            <div
+              class="timeline-item"
+              onclick="scrollToAnnouncement('announcement-2')"
+            >
+              <div class="timeline-title">
+                ANNOUNCEMENT OF THE AUCTION 5TH-15TH DECEMBER 2023
+              </div>
+              <div class="timeline-category">Event</div>
+            </div>
+            <div
+              class="timeline-item"
+              onclick="scrollToAnnouncement('announcement-3')"
+            >
+              <div class="timeline-title">Q3 Tech Stack Update</div>
+              <div class="timeline-category">Tech</div>
+            </div>
+            <div
+              class="timeline-item"
+              onclick="scrollToAnnouncement('announcement-4')"
+            >
+              <div class="timeline-title">Quarterly Town Hall</div>
+              <div class="timeline-category">Internal</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -154,5 +532,6 @@
       </div>
     </footer>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/announcement.js"></script>
   </body>
 </html>

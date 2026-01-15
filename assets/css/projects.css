@@ -14,6 +14,24 @@ body {
   transition: var(--transition);
   min-height: 100vh;
 }
+.hero-section {
+  margin: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(46, 125, 50, 0.8) 100%
+    ),
+    url("../img/hero/songfarm.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  color: white;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
 /* Container and Layout */
 .container {
@@ -65,7 +83,7 @@ body {
 }
 
 .article-title {
-  font-size: 1.75rem;
+  font-size: 22px;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 1.5rem;
@@ -99,7 +117,7 @@ body {
 .detail-icon {
   color: var(--primary);
   margin-top: 0.25rem;
-  font-size: 0.9rem;
+  font-size: 12px;
 }
 
 /* Highlight Box */
@@ -113,7 +131,7 @@ body {
 
 .highlight-title {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 18pxrem;
   color: var(--primary);
   margin-bottom: 1rem;
 }
@@ -127,7 +145,7 @@ body {
 .highlight-icon {
   color: var(--primary);
   margin-top: 0.25rem;
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
 /* Image with Caption */
@@ -144,7 +162,7 @@ body {
 }
 
 .image-caption {
-  font-size: 0.9rem;
+  font-size: 12px;
   font-style: italic;
   color: #64748b;
   text-align: center;
@@ -157,7 +175,7 @@ body {
 }
 
 .sidebar-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 1.5rem;
   display: flex;
@@ -224,7 +242,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .article-title {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
   .featured-image img {
