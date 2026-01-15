@@ -25,16 +25,17 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 0 20px;
 }
 
 .main-content {
   flex: 1;
   min-width: 0;
+  padding: 40px 0;
 }
 
 /* Filter Tabs */
@@ -252,6 +253,7 @@ body {
 .sidebar {
   width: 280px;
   flex-shrink: 0;
+  padding: 40px 0;
 }
 
 .sidebar-sticky {
