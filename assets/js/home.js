@@ -27,7 +27,7 @@ const HERO_SLIDES = [
 let heroCarouselState = {
   currentSlide: 0,
   totalSlides: 6,
-  isAutoPlaying: true,
+  isAutoPlaying: false,
   autoPlayTimer: null,
   isPaused: false,
 };

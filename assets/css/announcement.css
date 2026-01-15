@@ -1,6 +1,10 @@
 @import url(./header.css);
 @import url(./pages-hero.css);
 
+body {
+  padding-top: 70px;
+}
+
 .hero-section {
   margin: 20px;
   border-radius: 16px;
@@ -252,7 +256,7 @@
 
 .sidebar-sticky {
   position: sticky;
-  top: 20px;
+  top: 100px;
   background: white;
   border-radius: var(--border-radius);
   padding: 24px;
@@ -339,10 +343,6 @@
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 15px;
-  }
-
   .card-title {
     font-size: 1.25rem;
   }
@@ -391,4 +391,3 @@
     font-size: 0.9rem;
   }
 }
-

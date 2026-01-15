@@ -378,7 +378,7 @@
 
 .btn {
   display: inline-block;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: white;
   padding: 12px 30px;
   border-radius: var(--border-radius);
@@ -390,7 +390,7 @@
 }
 
 .btn:hover {
-  background-color: #e68900;
+  background-color: var(--secondary);
   transform: translateY(-3px);
   box-shadow: var(--shadow);
 }
@@ -976,5 +976,32 @@
 
   .clients-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.imigongo-section {
+  width: 100%;
+}
+
+.imigongo-pattern {
+  height: 170px;
+  background-image: url("../img/imigongo.png");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .imigongo-pattern {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imigongo-pattern {
+    height: 120px;
   }
 }

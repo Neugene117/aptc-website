@@ -13,9 +13,10 @@ body {
   line-height: 1.6;
   transition: var(--transition);
   min-height: 100vh;
+  padding-top: 0;
 }
 .hero-section {
-  margin: 20px;
+  margin: 0 20px 20px;
   border-radius: 16px;
   overflow: hidden;
   background: linear-gradient(
@@ -26,6 +27,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 24px;
+  padding-top: 104px;
   color: white;
   min-height: 440px;
   display: flex;
@@ -45,6 +47,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  overflow: visible;
 }
 
 @media (min-width: 1024px) {
@@ -172,6 +175,11 @@ body {
 /* Sidebar */
 .sidebar {
   z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  height: fit-content;
 }
 
 .sidebar-title {

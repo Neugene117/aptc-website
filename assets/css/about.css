@@ -200,8 +200,18 @@ body {
 /* Core Values Section */
 .values-section {
   padding: 32px 20px;
-  background: url("../IMG/arton10.jpg") center/cover no-repeat;
+  background: url("../img/arton115.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
+
+ .values-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+ }
 
 .values-section h3 {
   font-family: "Manrope", sans-serif;
@@ -210,6 +220,8 @@ body {
   color: var(--primary);
   margin-bottom: 24px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .values-scroll {
@@ -221,6 +233,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .values-scroll::-webkit-scrollbar {

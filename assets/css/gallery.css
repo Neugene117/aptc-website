@@ -81,15 +81,11 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--light);
-  padding: 20px;
-}
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 .gallery {
@@ -308,10 +304,6 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
@@ -319,10 +311,6 @@ body {
 
 /* Small mobile */
 @media (max-width: 480px) {
-  body {
-    padding: 5px;
-  }
-
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }

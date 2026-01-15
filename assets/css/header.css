@@ -15,6 +15,7 @@ body {
   color: var(--dark);
   background-color: var(--light);
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 h1,
@@ -38,8 +39,10 @@ h4 {
 header {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -206,7 +209,7 @@ nav ul {
 
 /* Footer */
 footer {
-  background-color: var(--dark);
+  background-color: var(--primary);
   color: white;
   padding: 70px 0 20px;
 }
@@ -220,7 +223,7 @@ footer {
 
 .footer-column h3 {
   color: white;
-  font-size: 1.3rem;
+  font-size: 20px;
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 10px;
@@ -242,18 +245,40 @@ footer {
 
 .footer-links li {
   margin-bottom: 12px;
+  font-size: 16px;
 }
 
 .footer-links a {
   color: #ddd;
   text-decoration: none;
   transition: var(--transition);
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  padding-left: 18px;
 }
+
+ .footer-links a::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-6px, -50%);
+  color: var(--secondary);
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity var(--transition), transform var(--transition);
+ }
 
 .footer-links a:hover {
   color: var(--secondary);
-  padding-left: 5px;
+  padding-left: 23px;
 }
+
+ .footer-links a:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+ }
 
 .social-icons {
   display: flex;
@@ -284,7 +309,7 @@ footer {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #aaa;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 @media (max-width: 1024px) {
