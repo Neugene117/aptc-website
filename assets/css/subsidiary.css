@@ -1,1 +1,327 @@
 @import url(./header.css);
+@import url(./pages-hero.css);
+@import url(./animations.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.hero-section {
+  margin: 0 20px 25px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(46, 125, 50, 0.8) 100%
+    ),
+    url("../img/rubon24.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  color: white;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  padding: 1rem;
+  background: var(--gray-light);
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+}
+
+.breadcrumbs a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+  color: var(--primary-dark);
+}
+
+.breadcrumbs span {
+  color: var(--gray-dark);
+}
+
+/* Main Content */
+.main-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 1rem;
+}
+
+.about-content h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.expansion-list {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding-left: 2rem;
+}
+
+.expansion-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 1rem;
+  background: url("../img/arton115.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.services-section h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.service-item:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-item h3 {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f8fffe 0%, #ffffff 100%);
+}
+
+.contact-section h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-item i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.info-item div {
+  line-height: 1.6;
+}
+
+.info-item strong {
+  color: var(--primary-dark);
+}
+
+.info-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-section {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section,
+  .services-section,
+  .contact-section {
+    padding: 32px 20px;
+  }
+
+  .about-content h2,
+  .services-section h2,
+  .contact-section h2 {
+    font-size: 18px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .expansion-list {
+    padding-left: 1rem;
+  }
+
+  .expansion-list li {
+    font-size: 14px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-item h3 {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-item {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-item i {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section,
+  .services-section,
+  .contact-section {
+    padding: 24px 20px;
+  }
+
+  .about-content h2,
+  .services-section h2,
+  .contact-section h2 {
+    font-size: 16px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .service-image {
+    height: 150px;
+  }
+
+  .service-item h3 {
+    font-size: 1rem;
+  }
+
+  .info-item {
+    padding: 0.8rem;
+  }
+}

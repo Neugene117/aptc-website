@@ -16,14 +16,14 @@ body {
   min-height: 100vh;
 }
 .hero-section {
-  margin: 20px;
+  margin: 0 20px 25px 20px;
   border-radius: 16px;
   overflow: hidden;
   background: linear-gradient(
       rgba(0, 0, 0, 0.1) 0%,
       rgba(46, 125, 50, 0.8) 100%
     ),
-    url("../img/hero/songfarm.jpg");
+    url("../img/rubon24.jpg");
   background-size: cover;
   background-position: center;
   padding: 24px;
