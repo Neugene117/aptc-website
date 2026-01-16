@@ -122,35 +122,57 @@
 
       <div class="team-grid">
         <!-- Team Member 1 -->
-        <div class="team-card">
+        <div
+          class="team-card"
+          data-phone="+250 789 303 811"
+          data-email="dceo@aptc.rw"
+          data-bio="Experienced leader with over 20 years in finance and administration, driving strategic initiatives for agricultural development."
+        >
           <div class="card-image">
             <img
               src="../assets/img/team/arton154.png"
               alt="Lt Col. Alexandre KARASIRA"
             />
-            <a
-              href="mailto:dceo@aptc.rw"
-              class="email-icon"
-            >
+            <div class="eye-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <a href="mailto:dceo@aptc.rw" class="email-icon">
               <i class="fas fa-envelope"></i>
             </a>
+            <div class="tooltip">
+              Click to view more details about Lt Col. Alexandre KARASIRA
+            </div>
           </div>
           <div class="card-info">
             <h3>Lt Col. Alexandre KARASIRA</h3>
-            <p>Deputy Chief executive Officer & Director of Finance and Administration</p>
+            <p>
+              Deputy Chief executive Officer & Director of Finance and
+              Administration
+            </p>
           </div>
         </div>
 
         <!-- Team Member 2 -->
-        <div class="team-card">
+        <div
+          class="team-card"
+          data-phone="+250 789 303 812"
+          data-email="mdapi@apirwanda.rw"
+          data-bio="Specialist in agro-processing industries with extensive experience in managing operations and ensuring quality standards in food production."
+        >
           <div class="card-image">
             <img
               src="../assets/img/team/arton157.png"
               alt="Lt Col. Olivier RUGEMA"
             />
+            <div class="eye-icon">
+              <i class="fas fa-eye"></i>
+            </div>
             <a href="mailto:mdapi@apirwanda.rw" class="email-icon">
               <i class="fas fa-envelope"></i>
             </a>
+            <div class="tooltip">
+              Click to view more details about Lt Col. Olivier RUGEMA
+            </div>
           </div>
           <div class="card-info">
             <h3>Lt Col. Olivier RUGEMA</h3>
@@ -159,18 +181,26 @@
         </div>
 
         <!-- Team Member 3 -->
-        <div class="team-card">
+        <div
+          class="team-card"
+          data-phone="+250 789 303 813"
+          data-email="mdrugari@rugarimeat.rw"
+          data-bio="Expert in meat processing with a focus on sustainable practices and innovation in the livestock industry."
+        >
           <div class="card-image">
             <img
               src="../assets/img/team/arton156.jpg"
               alt="Lt Col Rogers KABUNGO"
             />
-            <a
-              href="mailto:mdrugari@rugarimeat.rw"
-              class="email-icon"
-            >
+            <div class="eye-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <a href="mailto:mdrugari@rugarimeat.rw" class="email-icon">
               <i class="fas fa-envelope"></i>
             </a>
+            <div class="tooltip">
+              Click to view more details about Lt Col Rogers KABUNGO
+            </div>
           </div>
           <div class="card-info">
             <h3>Lt Col Rogers KABUNGO</h3>
@@ -264,6 +294,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- Team Modal -->
+    <div id="teamModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-image">
+          <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-details">
+          <h3 id="modalName"></h3>
+          <p id="modalTitle"></p>
+          <p id="modalBio"></p>
+          <p><i class="fas fa-phone"></i> <span id="modalPhone"></span></p>
+          <p><i class="fas fa-envelope"></i> <span id="modalEmail"></span></p>
+        </div>
+      </div>
+    </div>
+
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/team.js"></script>
   </body>
