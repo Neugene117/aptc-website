@@ -675,7 +675,7 @@ body {
 
 /* Clients Section */
 .clients-section {
-  padding: 80px 0;
+  padding: 50px 0;
   background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
   position: relative;
 }
@@ -704,8 +704,8 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-top: 3rem;
-  padding: 2rem 0;
+  margin-top: 1.5rem;
+  padding: 1.25rem 0;
   background: white;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -713,10 +713,10 @@ body {
 
 .clients-carousel-track {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   animation: scrollClientsRightToLeft 40s linear infinite;
   width: fit-content;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .clients-carousel-track:hover {
@@ -725,14 +725,14 @@ body {
 
 .client-logo {
   background-color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 140px;
-  min-width: 200px;
-  flex: 0 0 200px;
+  height: 100px;
+  min-width: 150px;
+  flex: 0 0 150px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: 2px solid #f0f0f0;
