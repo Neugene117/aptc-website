@@ -191,7 +191,7 @@ body {
   border-radius: var(--border-radius);
   cursor: pointer;
   font-size: 16px;
-  color: var(--white);
+  color: white;
   transition: var(--transition);
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -361,7 +361,7 @@ body {
 
 .articles-count {
   font-size: 0.9rem;
-  color: var(--gray);
+  color: white;
   font-weight: 500;
   background: var(--primary);
   padding: 0.4rem 0.8rem;
@@ -629,7 +629,7 @@ body {
 
 .pagination-btn:hover {
   background: var(--primary);
-  color: var(--primary);
+  color: white;
 }
 
 .pagination-number {
@@ -639,12 +639,12 @@ body {
 
 .pagination-number:hover {
   background: var(--primary);
-  color: var(--primary);
+  color: white;
 }
 
 .pagination-number.active {
   background: var(--primary);
-  color: var(--white);
+  color: white;
   font-weight: 700;
   border-color: var(--primary);
 }
