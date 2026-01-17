@@ -1,4 +1,12 @@
 @import url(./header.css);
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.5;
+  padding-top: 25px;
+  min-height: 100vh;
+}
 /* Hero Section */
 .hero {
   width: 100%;
@@ -865,6 +873,9 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+  body {
+  padding-top: 45px;
+}
   .hero-container {
     gap: 40px;
     padding: 50px 30px;
