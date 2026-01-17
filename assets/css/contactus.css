@@ -13,6 +13,7 @@ body {
   color: var(--dark);
   line-height: 1.5;
   min-height: 100vh;
+  padding-top: 3rem;
 }
 .hero-section {
   margin: 20px;
