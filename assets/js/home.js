@@ -1,26 +1,26 @@
 // ===== HERO CAROUSEL DATA =====
 const HERO_SLIDES = [
   {
-    title: "Milk is a nutritious drink, take care your body.",
+    title: 'Milk is a nutritious drink, <span class="hero-highlight">take care your body.</span>',
     subtitle: "Premium dairy products for healthier living",
   },
   {
-    title: "API Agriculture Mechanization",
+    title: 'API <span class="hero-highlight">Agriculture Mechanization</span>',
     subtitle: "Modern technology for sustainable farming",
   },
   {
-    title: "We Deliver Good Service With Good Quality",
+    title: 'We Deliver <span class="hero-highlight">Good Service With Good Quality</span>',
     subtitle: "Excellence in every aspect of our work",
   },
   {
-    title: "Fertilizers and Seeds Distribution",
+    title: '<span class="hero-highlight">Fertilizers and Seeds Distribution</span>',
     subtitle: "Quality seeds for better harvests",
   },
   {
-    title: "Songa Dairy Farm",
+    title: '<span class="hero-highlight">Songa Dairy Farm</span>',
     subtitle: "Building a sustainable dairy future",
   },
-  { title: "Fresh Vegetables", subtitle: "Direct from farm to your table" },
+  { title: '<span class="hero-highlight">Fresh Vegetables</span>', subtitle: "Direct from farm to your table" },
 ];
 
 // Hero Carousel State
@@ -98,7 +98,7 @@ function goToHeroSlide(slideIndex) {
 
   // Update text content
   if (titleEl && subtitleEl) {
-    titleEl.textContent = HERO_SLIDES[slideIndex].title;
+    titleEl.innerHTML = HERO_SLIDES[slideIndex].title;
     subtitleEl.textContent = HERO_SLIDES[slideIndex].subtitle;
   }
 

@@ -10,15 +10,11 @@ body {
 /* Hero Section */
 .hero {
   width: 100%;
-  min-height: 70vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    rgba(76, 175, 80, 0.1),
-    rgba(46, 125, 50, 0.05)
-  );
+  background-color: #ffffff;
   overflow: hidden;
   position: relative;
 }
@@ -27,8 +23,9 @@ body {
 .bubble {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.3;
+  opacity: 0;
   z-index: 1;
+  display: none;
 }
 
 .bubble-1 {
@@ -177,15 +174,16 @@ body {
 
 .hero-container {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  justify-content: flex-start;
   position: relative;
   z-index: 10;
+  height: 100%;
 }
 
 /* Left Side: Text Content */
@@ -193,17 +191,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  width: 50%;
+  padding: 80px 60px;
+  box-sizing: border-box;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.903)
+    ),
+    url("../img/imigongo.png");
+
+  background-size: cover;
+  background-position: center;
 }
 
+
 .hero-title {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.2;
-  color: var(--dark);
+  line-height: 1.15;
+  color: #222;
   margin: 0;
   opacity: 0;
   animation: slideInLeft 0.8s ease-out forwards;
+  letter-spacing: -0.5px;
+}
+
+.hero-highlight {
+  color: #14803d;
 }
 
 @keyframes slideInLeft {
@@ -218,22 +235,23 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
-  color: var(--gray);
+  font-size: 1rem;
+  color: #666;
   line-height: 1.6;
   margin: 0;
   opacity: 0;
   animation: slideInLeft 0.8s ease-out 0.2s forwards;
+  font-weight: 400;
 }
 
 .hero-cta-btn {
   align-self: flex-start;
   background-color: var(--primary);
   color: white;
-  padding: 16px 40px;
+  padding: 12px 32px;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -241,20 +259,22 @@ body {
   animation: slideInLeft 0.8s ease-out 0.4s forwards;
   text-decoration: none;
   display: inline-block;
+  letter-spacing: 0.3px;
 }
 
 .hero-cta-btn:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.3);
+  background-color: #158c42;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(29, 184, 84, 0.3);
 }
 
 /* Hero Dots */
 .hero-dots {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.6s forwards;
+  margin-top: 10px;
 }
 
 .hero-dot {
@@ -288,16 +308,22 @@ body {
 /* Right Side: Image Carousel */
 .hero-image-content {
   position: relative;
-  height: 500px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  /* flex: 1; */
+  width: 50%;
+  height: auto;
+  min-height: 70vh;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  background-color: #000;
+  z-index: 10;
 }
 
 .hero-carousel-wrapper {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-slide {
@@ -345,7 +371,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: 2;
   top: 0;
   left: 0;
@@ -354,34 +380,36 @@ body {
 /* Image Navigation Arrows */
 .hero-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 2px solid white;
+  left: 0;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  border: none;
   border-radius: 50%;
-  color: white;
-  font-size: 1.2rem;
+  color: #ffffff;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 15;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .hero-arrow:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  transform: translateY(-50%) scale(1.1);
+  background-color: #0d5a2d;
+  transform: translateX(-50%) scale(1.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
 }
 
 .hero-arrow-prev {
-  left: 20px;
+  top: calc(50% - 60px);
 }
 
 .hero-arrow-next {
-  right: 20px;
+  top: calc(50% + 12px);
 }
 
 .btn {
