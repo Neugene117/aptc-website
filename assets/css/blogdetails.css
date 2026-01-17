@@ -17,6 +17,7 @@ body {
   color: var(--gray-dark);
   background-color: var(--white);
   line-height: 1.6;
+  padding-top: 4.5rem;
 }
 
 .container {

@@ -16,6 +16,7 @@ body {
   color: var(--gray-dark);
   background-color: var(--white);
   line-height: 1.6;
+  padding-top: 4.5rem;
 }
 
 .container {
@@ -68,7 +69,7 @@ body {
 .section-title {
   font-size: 20px;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 1.5rem;
   letter-spacing: -0.5px;
 }
@@ -198,7 +199,7 @@ body {
 }
 
 .search-btn:hover {
-  background: var(--primary-dark);
+  background: var(--primary);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -218,7 +219,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   font-size: 16px;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -287,7 +288,7 @@ body {
 
 .featured-content h3 {
   font-size: 20px;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 1.2rem;
   line-height: 1.4;
   font-weight: 700;
@@ -295,7 +296,7 @@ body {
 
 .featured-content p {
   font-size: 14px;
-  color: var(--gray-medium);
+  color: var(--gray);
   margin-bottom: 1.8rem;
   line-height: 1.7;
 }
@@ -335,7 +336,7 @@ body {
 
 .read-more:hover {
   gap: 1rem;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .read-more i {
@@ -349,7 +350,7 @@ body {
 
 .latest-title {
   font-size: 1.3rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 2rem;
   font-weight: 700;
   animation: fadeInUp 0.8s ease-out 0.5s both;
@@ -360,9 +361,9 @@ body {
 
 .articles-count {
   font-size: 0.9rem;
-  color: var(--gray-medium);
+  color: var(--gray);
   font-weight: 500;
-  background: var(--primary-light);
+  background: var(--primary);
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
 }
@@ -409,7 +410,7 @@ body {
 .article-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--primary-light);
+  border-color: var(--primary);
 }
 
 .article-image {
@@ -453,7 +454,7 @@ body {
 
 .article-content h3 {
   font-size: 1.1rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 0.9rem;
   line-height: 1.4;
   font-weight: 700;
@@ -534,7 +535,7 @@ body {
 
 .article-link:hover {
   gap: 0.8rem;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 /* No Articles Message */
@@ -549,14 +550,14 @@ body {
 
 .no-articles i {
   font-size: 3.5rem;
-  color: var(--primary-light);
+  color: var(--primary);
   margin-bottom: 1rem;
   opacity: 0.8;
 }
 
 .no-articles h3 {
   font-size: 1.3rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 0.8rem;
   font-weight: 700;
 }
@@ -583,7 +584,7 @@ body {
 }
 
 .no-articles .btn:hover {
-  background: var(--primary-dark);
+  background: var(--primary);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
@@ -627,8 +628,8 @@ body {
 }
 
 .pagination-btn:hover {
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--primary);
 }
 
 .pagination-number {
@@ -637,8 +638,8 @@ body {
 }
 
 .pagination-number:hover {
-  background: var(--primary-light);
-  color: var(--primary-dark);
+  background: var(--primary);
+  color: var(--primary);
 }
 
 .pagination-number.active {
@@ -649,8 +650,8 @@ body {
 }
 
 .pagination-number.active:hover {
-  background: var(--primary-dark);
-  border-color: var(--primary-dark);
+  background: var(--primary);
+  border-color: var(--primary);
   color: var(--white);
 }
 

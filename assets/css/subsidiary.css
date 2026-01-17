@@ -18,6 +18,7 @@ body {
   color: var(--dark);
   line-height: 1.5;
   min-height: 100vh;
+  padding-top: 4.5rem;
 }
 
 .hero-section {
@@ -54,7 +55,7 @@ body {
 }
 
 .breadcrumbs a:hover {
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .breadcrumbs span {
@@ -173,7 +174,7 @@ body {
 .service-item h3 {
   padding: 1.5rem;
   font-size: 1.3rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -224,7 +225,7 @@ body {
 }
 
 .info-item strong {
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .info-item a {
