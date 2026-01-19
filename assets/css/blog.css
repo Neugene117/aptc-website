@@ -12,13 +12,23 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--gray-dark);
-  background-color: var(--white);
-  line-height: 1.6;
+   font-family: "Inter", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  background: url("../img/imigongo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
   padding-top: 4.5rem;
 }
-
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,7 +58,6 @@ body {
   padding: 5rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
 }
 
 .section-header {
@@ -284,6 +293,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #ffffff;
 }
 
 .featured-content h3 {
@@ -386,6 +396,7 @@ body {
   flex-direction: column;
   animation: fadeInUp 0.8s ease-out both;
   cursor: pointer;
+  background: #ffffff;
 }
 
 .article-card:nth-child(1) {

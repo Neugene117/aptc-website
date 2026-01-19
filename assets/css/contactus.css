@@ -8,12 +8,22 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: var(--light);
+   font-family: "Inter", sans-serif;
   color: var(--dark);
   line-height: 1.5;
+  background: url("../img/imigongo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
   min-height: 100vh;
   padding-top: 3rem;
+}
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
 }
 .hero-section {
   margin: 20px;
@@ -62,7 +72,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 3px solid var(--secondary);
@@ -102,7 +112,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 5px;
 }
 
@@ -142,7 +152,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 3px solid var(--secondary);
@@ -163,7 +173,7 @@ body {
 .form-group label {
   font-size: 14px;
   font-weight: 600;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .form-group input,
@@ -194,7 +204,7 @@ body {
   background: linear-gradient(
     135deg,
     var(--primary) 0%,
-    var(--primary-dark) 100%
+    var(--primary) 100%
   );
   color: white;
   border: none;

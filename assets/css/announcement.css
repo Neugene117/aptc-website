@@ -2,10 +2,23 @@
 @import url(./pages-hero.css);
 
 body {
-  padding-top: 3.5rem;
+   font-family: "Inter", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  background: url("../img/imigongo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
   min-height: 100vh;
+  padding-top: 3.5rem;
 }
-
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
 .hero-section {
   margin: 20px;
   border-radius: 16px;

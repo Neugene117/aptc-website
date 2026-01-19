@@ -13,13 +13,22 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: var(--gray-dark);
-  background-color: var(--white);
-  line-height: 1.6;
+   font-family: "Inter", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  background: url("../img/imigongo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
   padding-top: 4.5rem;
 }
-
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,13 +57,12 @@ body {
 /* Related Images Gallery */
 .related-gallery {
   padding: 4rem 1rem;
-  background: var(--gray-light);
 }
 
 .gallery-title {
   text-align: center;
   font-size: 2rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -88,7 +96,7 @@ body {
 .breadcrumbs {
   margin-bottom: 2rem;
   font-size: 0.9rem;
-  color: var(--gray-medium);
+  color: var(--gray);
 }
 
 .breadcrumbs a {
@@ -102,7 +110,7 @@ body {
 }
 
 .breadcrumbs span {
-  color: var(--gray-dark);
+  color: var(--gray);
 }
 
 /* Content Wrapper */
@@ -128,7 +136,7 @@ body {
 
 .article-header h1 {
   font-size: 2rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 1rem;
   line-height: 1.3;
   font-weight: 700;
@@ -139,7 +147,7 @@ body {
   align-items: center;
   gap: 2rem;
   font-size: 0.9rem;
-  color: var(--gray-medium);
+  color: var(--gray);
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
@@ -163,7 +171,7 @@ body {
 
 .share-buttons span {
   font-weight: 600;
-  color: var(--gray-dark);
+  color: var(--gray);
 }
 
 .share-btn {
@@ -216,7 +224,7 @@ body {
 
 .article-body h2 {
   font-size: 1.5rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin: 2rem 0 1rem 0;
   font-weight: 700;
 }
@@ -231,7 +239,7 @@ body {
 /* Popular Articles */
 .popular-articles h2 {
   font-size: 1.3rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
@@ -263,7 +271,7 @@ body {
 
 .popular-item h3 {
   font-size: 1rem;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 0.6rem;
   line-height: 1.4;
   font-weight: 600;
@@ -271,7 +279,7 @@ body {
 
 .popular-item p {
   font-size: 0.85rem;
-  color: var(--gray-medium);
+  color: var(--gray);
   line-height: 1.5;
   margin: 0;
 }

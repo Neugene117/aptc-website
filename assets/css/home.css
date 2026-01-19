@@ -1,12 +1,24 @@
 @import url(./header.css);
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--light);
   color: var(--dark);
   line-height: 1.5;
   padding-top: 25px;
   min-height: 100vh;
+  background: url("../img/imigongo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+
 /* Hero Section */
 .hero {
   width: 100%;
@@ -14,7 +26,6 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  background-color: #ffffff;
   overflow: hidden;
   position: relative;
 }
@@ -24,7 +35,7 @@ body {
   position: absolute;
   border-radius: 50%;
   opacity: 0;
-  z-index: 1;
+  z-index: 999;
   display: none;
 }
 
@@ -197,16 +208,12 @@ body {
   box-sizing: border-box;
 
   background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.95),
-      rgba(255, 255, 255, 0.903)
-    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.903)),
     url("../img/imigongo.png");
 
   background-size: cover;
   background-position: center;
 }
-
 
 .hero-title {
   font-size: 2.5rem;
@@ -434,7 +441,6 @@ body {
 /* Agriculture Carousel Section */
 .agriculture-carousel {
   width: 100%;
-  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
   padding: 50px 0;
   overflow: hidden;
 }
@@ -649,10 +655,6 @@ body {
 }
 
 /* Subsidiaries Section */
-.subsidiaries {
-  background-color: var(--light-gray);
-}
-
 .subsidiaries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -704,28 +706,39 @@ body {
 /* Clients Section */
 .clients-section {
   padding: 50px 0;
-  background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
   position: relative;
 }
 
 .clients-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 0%, var(--primary) 20%, var(--primary) 80%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary) 20%,
+    var(--primary) 80%,
+    transparent 100%
+  );
 }
 
 .clients-section::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent 0%, var(--primary) 20%, var(--primary) 80%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary) 20%,
+    var(--primary) 80%,
+    transparent 100%
+  );
 }
 
 .clients-carousel-wrapper {
@@ -902,8 +915,8 @@ body {
 /* Responsive Styles */
 @media (max-width: 1024px) {
   body {
-  padding-top: 45px;
-}
+    padding-top: 45px;
+  }
   .hero-container {
     gap: 40px;
     padding: 50px 30px;
